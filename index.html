@@ -42,7 +42,7 @@
 
         <section class="scroll s-two hero" data-section-name="s-two">
             <div class="container">
-                <div class="nav-hero-wrapper reveal nav-slide-up">
+                <div class="nav-hero-wrapper reveal">
                     <ul class="navigation-list reveal nav-fade-in">
                         <li class="navigation-list-item">
                             <a href="#">
@@ -254,28 +254,31 @@
         </section>
 
         <section class="scroll s-four" data-section-name="s-four">
-            <div class="container">
-                <div class="image-grid">
-                    <div class="row-images reveal images-delay-first">
+
+                <div class="image-grid-shadow reveal">
+
+                </div>
+                <div class="image-grid reveal">
+                    <div class="row-images">
                    <img src="img/brand-photo-1.png"  class="grid-image" width="241.41" height="129" alt="Катенька Катюша">
                    <img src="img/brand-photo-2.png"  class="grid-image" width="160" height="120" alt="Чо-чо">
                    <img src="img/brand-photo-3.png"  class="grid-image" width="210" height="120" alt="Брусника">
                    <img src="img/brand-photo-4.png"  class="grid-image" width="190" height="110" alt="Бумбараш">
                     </div>
-                    <div class="row-images reveal images-delay-second">
+                    <div class="row-images">
                    <img src="img/brand-photo-5.png"  class="grid-image" width="150" height="140" alt="Беллини">
                    <img src="img/brand-photo-6.png"  class="grid-image" width="160" height="153.27" alt="Балерина и Бифштекс">
                    <img src="img/brand-photo-7.png"  class="grid-image" width="240" height="120" alt="Бастурма">
                    <img src="img/brand-photo-8.png"  class="grid-image" width="190" height="150" alt="Театральное кафе по-венски">
                     </div>
-                    <div class="row-images reveal images-delay-third">
+                    <div class="row-images">
                    <img src="img/brand-photo-9.png"  class="grid-image" width="150" height="120" alt="Птичка невеличка">
                    <img src="img/brand-photo-10.png"  class="grid-image" width="140" height="120" alt="Boho">
                    <img src="img/brand-photo-11.png"  class="grid-image" width="210" height="140" alt="Чёткие рестораны">
                    <img src="img/brand-photo-12.png"  class="grid-image" width="190" height="140" alt="Моё ты счастье">
                     </div>
                 </div>
-            </div>
+
         </section>
 
         <section class="scroll s-five" data-section-name="s-five">
@@ -291,15 +294,63 @@
         </section>
 
         <section class="scroll s-six" data-section-name="s-six">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
+
+                <div class="contacts-wrapper reveal">
+                    <div class="contact-form-wrapper reveal">
+                        <h2>Обсудим ваш проект?</h2>
+                        <form>
+                            
+                            <input type="text" id="name" name="name" placeholder="Ваше имя"><br>
+                          
+                            
+                            <input type="tel" id="phone" name="phone" placeholder="Телефон"><br>
+                          
+                            
+                            <input type="email" id="email" name="email" placeholder="Email"><br>
+                          
+                            
+                            <textarea id="message" name="message" placeholder="Что нужно сделать?"></textarea><br>
+                        <label class="radio-label">
+                            <input type="radio" id="agree" name="agree" value="yes">
+                            <span  class="agree-text">Согласие на обработку персональных данных Согласие на обработку персональных данных<br> Согласие на обработку персональных данных Согласие на обработку персональных данных</span>
+                            <br>
+                        </label>
+
+                            <input type="submit" value="Отправить">
+                          </form>
+                    </div>
+                    
+                    <div class="contact-logo-wrapper reveal">
                         <p>
-                            <img src="img/cute-cat-filler.jpg" width="540" height="360">
+                            <img src="img/logo-4.png" width="272" height="106" alt="Terez">
+                            <img src="img/logo-5.png" width="319" height="127" alt="agency">
                         </p>
                     </div>
+
+                    <div class="contact-us-wrapper">
+                        <ul class="contact-us-list"><h3>Свяжитесь с нами</h3>
+                            <li class="contact-us-list-item">
+                                <a href="mailto:tereeeeeeeeeeeeez.agency@gmail.com">tereeeeeeeeeeeeez.agency@gmail.com</a>
+                            </li>
+                            <li class="contact-us-list-item">
+                                <a href="tel:+79185547798">+7 (918) 554-77-98</a>
+                            </li>
+                        </ul>
+                        <ul class="socials">
+                            <li class="socials-item">
+                                <a href="#">
+                                    vk
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a href="#">
+                                    inst
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+
         </section>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -372,7 +423,8 @@
 				}
 			}
         </script>
-        <script src="scripts/reveal.js"></script>
+        <!-- <script src="scripts/reveal.js"></script> -->
+        <script src="scripts/intersection-observer.js"></script>
         <script src="scripts/canvas.js"></script>
     </body>
 </html>

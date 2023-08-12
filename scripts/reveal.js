@@ -43,7 +43,7 @@ const hideScrollElement = (element) => {
 
 const handleScrollAnimation = () => {
   scrollElements.forEach((el) => {
-    if (elementInView(el, 1.10)) {
+    if (elementInView(el, 1)) {
       displayScrollElement(el);
     } else if (elementOutofView(el)) {
       hideScrollElement(el)
@@ -56,5 +56,6 @@ window.addEventListener("scroll", () => {
     handleScrollAnimation();
   }, 250);
 })
+
 
 /* https://webdesign.tutsplus.com/animate-on-scroll-with-javascript--cms-36671t для информации об прокрутки*/
